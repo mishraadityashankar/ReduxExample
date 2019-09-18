@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 class ShowList extends Component {
+  
+   
     render() {
-
+     
         console.log(this.props)
 
         const {list}=this.props;
@@ -23,11 +25,15 @@ class ShowList extends Component {
            <div>No item present</div>
          )
     return(
+
+          
        <div>
            <h1>Item List</h1>
            <hr></hr>
            {listitem}
+
        </div>
+      
     )
  }
 }
@@ -35,5 +41,6 @@ const mapStateToProps=(state) =>{
     return {list : state.list}
 
 }
+
 
 export default connect(mapStateToProps)(ShowList);

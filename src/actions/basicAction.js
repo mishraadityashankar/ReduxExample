@@ -1,6 +1,7 @@
-export function addNumber(item) {
+  
+export function addNumber(number) {
     return {
         type: "ADD",
-        payload: item
+        payload: number
     };
 }

@@ -10,6 +10,7 @@ const initialstate={
     ]
 }
 const rootReducer = (state = initialstate , action) => {
+    console.log(action);
     switch (action.type) {
         case "ADD":
             state = {
